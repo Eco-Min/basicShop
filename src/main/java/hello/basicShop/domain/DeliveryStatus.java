@@ -1,2 +1,5 @@
-package hello.basicShop.domain;public class DeliveryStatus {
+package hello.basicShop.domain;
+
+public enum DeliveryStatus {
+    DELIVERY, CANCEL
 }
