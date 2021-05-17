@@ -31,6 +31,10 @@ public class Order {
     private LocalDate Date;
     private OrderStatus status;
 
+    @OneToOne
+    @JoinColumn(name = "delivery_id")
+    private Delivery delivery;
+
     // 편의 메서드를 만드는건 대부분 주인 에서 만드는 거지만
     // 비지니스 모델마다 조금씩 다르다 설계에 따라 달라져야 한다.
     public void addOrderItem(OrderItem orderItem) {
