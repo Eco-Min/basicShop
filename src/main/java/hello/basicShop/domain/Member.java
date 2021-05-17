@@ -1,5 +1,6 @@
 package hello.basicShop.domain;
 
+import hello.basicShop.domain.base.BaseEntity;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -10,7 +11,7 @@ import java.util.List;
 @Entity
 @Getter
 @Setter
-public class Member {
+public class Member extends BaseEntity {
 
     @Id
     @GeneratedValue

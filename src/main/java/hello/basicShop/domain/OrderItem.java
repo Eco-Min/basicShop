@@ -1,5 +1,6 @@
 package hello.basicShop.domain;
 
+import hello.basicShop.domain.items.Item;
 import lombok.Getter;
 import lombok.Setter;
 

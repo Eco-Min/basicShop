@@ -1,7 +1,7 @@
-/*
 package hello.basicShop;
 
 import hello.basicShop.domain.Member;
+import hello.basicShop.domain.items.Book;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
@@ -27,11 +27,12 @@ public class Init {
     static class InitService {
         private final EntityManager em;
         public void dbInit1() {
-            Member member = new Member();
-            member.setName("hello");
-            em.persist(member);
+            Book book = new Book();
+            book.setName("JPA");
+            book.setAuthor("민경재");
+
+            em.persist(book);
         }
 
     }
 }
-*/
