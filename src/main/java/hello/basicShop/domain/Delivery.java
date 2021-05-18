@@ -1,6 +1,7 @@
 package hello.basicShop.domain;
 
 import hello.basicShop.domain.base.BaseEntity;
+import hello.basicShop.domain.embedded.Address;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -15,11 +16,10 @@ public class Delivery{
     @GeneratedValue
     private Long id;
 
-    private String city;
-    private String street;
-    private String zipcode;
+    @Embedded
+    private Address address;
     private DeliveryStatus status;
 
-    @OneToOne(mappedBy = "delivery")
+    @OneToOne(fetch = FetchType.LAZY, mappedBy = "delivery")
     private Order order;
 }

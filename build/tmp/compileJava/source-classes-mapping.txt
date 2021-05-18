@@ -1,9 +1,26 @@
 hello/basicShop/domain/OrderStatus.java
  hello.basicShop.domain.OrderStatus
-hello/basicShop/domain/category/Category.java
- hello.basicShop.domain.category.Category
+hello/basicShop/domain/DeliveryStatus.java
+ hello.basicShop.domain.DeliveryStatus
 hello/basicShop/BasicShopApplication.java
  hello.basicShop.BasicShopApplication
+hello/basicShop/domain/items/Item.java
+ hello.basicShop.domain.items.Item
+hello/basicShop/domain/category/Category.java
+ hello.basicShop.domain.category.Category
+hello/basicShop/domain/items/Movie.java
+ hello.basicShop.domain.items.Movie
+hello/basicShop/domain/items/Book.java
+ hello.basicShop.domain.items.Book
+hello/basicShop/Init.java
+ hello.basicShop.Init
+ hello.basicShop.Init$InitService
+hello/basicShop/domain/items/Album.java
+ hello.basicShop.domain.items.Album
+hello/basicShop/domain/base/BaseEntity.java
+ hello.basicShop.domain.base.BaseEntity
+hello/basicShop/domain/embedded/Address.java
+ hello.basicShop.domain.embedded.Address
 hello/basicShop/domain/Delivery.java
  hello.basicShop.domain.Delivery
 hello/basicShop/domain/Order.java
@@ -12,7 +29,3 @@ hello/basicShop/domain/Member.java
  hello.basicShop.domain.Member
 hello/basicShop/domain/OrderItem.java
  hello.basicShop.domain.OrderItem
-hello/basicShop/domain/Item.java
- hello.basicShop.domain.Item
-hello/basicShop/domain/DeliveryStatus.java
- hello.basicShop.domain.DeliveryStatus
