@@ -17,7 +17,7 @@ public class Category {
     private String name;
 
     //SelfMapping N:1 은 mappedBy가 없다 → 연관관계 주인이 되어야한다.
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "parent_id")
     private Category parent;
     @OneToMany(mappedBy = "parent")
