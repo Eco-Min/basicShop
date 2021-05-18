@@ -1,6 +1,7 @@
 package hello.basicShop.domain;
 
 import hello.basicShop.domain.base.BaseEntity;
+import hello.basicShop.domain.embedded.Address;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -18,9 +19,9 @@ public class Member extends BaseEntity {
     @Column(name = "member_id")
     private Long id;
     private String name;
-    private String city;
-    private String street;
-    private String zipcode;
+
+    @Embedded
+    private Address address;
 
     @OneToMany(mappedBy = "member")
     private List<Order> orders = new ArrayList<>();
